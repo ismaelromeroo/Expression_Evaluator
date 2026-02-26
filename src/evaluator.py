@@ -31,13 +31,18 @@ def eval_rpn(rpn_tokens: list[tuple[str, int | float | str]], trace: bool = Fals
 
                 if len(stack) < 2:
                     raise ValueError("Not enough operands")
-
+                
                 b = stack.pop()
                 a = stack.pop()
 
                 func = OPERATORS.get(tok_value)
                 if func is None:
                     raise ValueError(f"Invalid operator: {tok_value!r}")
+
+                try:
+                    stack.append(func(a, b))
+                except ZeroDivisionError:
+                    raise ValueError("Division by zero") from None
 
                 res = func(a, b)
                 stack.append(res)
