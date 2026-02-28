@@ -37,7 +37,7 @@ The input string is scanned character-by-character and converted into structured
 Example:
 
 "2*(3+4)"
-→
+->
 [('NUM', 2), ('OP', '*'), ('LPAREN', '('), ('NUM', 3), ('OP', '+'), ('NUM', 4), ('RPAREN', ')')]
 
 This step also handles:
@@ -53,7 +53,7 @@ This removes the need to worry about operator precedence during evaluation.
 Example:
 
 2*(3+4)
-→
+->
 2 3 4 + *
 
 The implementation handles:
@@ -127,11 +127,11 @@ test_core.py
 
 Each module has a single responsibility:
 
-- tokenizer.py → lexical analysis
-- parser.py → Shunting Yard implementation
-- evaluator.py → RPN stack execution
-- engine.py → pipeline coordination
-- cli.py → user interface
+- tokenizer.py -> lexical analysis
+- parser.py -> Shunting Yard implementation
+- evaluator.py -> RPN stack execution
+- engine.py -> pipeline coordination
+- cli.py -> user interface
 
 # Time & Space Complexity
 
