@@ -1,7 +1,5 @@
 # Expression Evaluator (Shunting Yard + RPN)
 
-I built this project to practice parsing, data structures, and algorithm design from scratch.
-
 It takes a math expression as a string (like '2*(3+4)') and evaluates it by implementing:
 
 - Tokenization
