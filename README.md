@@ -22,11 +22,11 @@ This program takes a math expression as a string (like '2*(3+4)') and evaluates 
 The evaluator follows a 3-step pipeline:
 
 Input String
-↓
+->
 Tokenize
-↓
+->
 Convert to RPN (Shunting Yard)
-↓
+->
 Evaluate using a stack
 
 
