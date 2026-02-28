@@ -1,6 +1,6 @@
 # Expression Evaluator (Shunting Yard + RPN)
 
-It takes a math expression as a string (like '2*(3+4)') and evaluates it by implementing:
+This program takes a math expression as a string (like '2*(3+4)') and evaluates it by implementing:
 
 - Tokenization
 - The Shunting Yard algorithm
